@@ -29,7 +29,7 @@ var blue ={
     rxCharacteristic: '6e400003-b5a3-f393-e0a9-e50e24dcca9e'  // receive is from the phone's perspective
 }
 
-var ConnDeviceId = "D4:F7:2C:CD:54:BD";
+var ConnDeviceId; //= "D4:F7:2C:CD:54:BD";
 var deviceList =[];
  
 function onLoad(){
