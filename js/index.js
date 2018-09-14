@@ -42,6 +42,9 @@ function onDeviceReady(){
 	ble.autoConnect(ConnDeviceId, onConnect, onConnError);
 }
 
+function forbind(){
+	ble.autoConnect(ConnDeviceId, onConnect, onConnError);
+}
 	 
 function refreshDeviceList(){
 	//deviceList =[];
