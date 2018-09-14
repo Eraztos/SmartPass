@@ -114,6 +114,7 @@ function disconnect() {
 
 function onDisconnect(){
 	document.getElementById("statusDiv").innerHTML = "Status: Disconnected";
+		document.getElementById('Pass').style.backgroundColor = 'red';
 }
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
