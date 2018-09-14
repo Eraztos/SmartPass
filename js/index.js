@@ -78,6 +78,7 @@ function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
 	document.getElementById("bleId").innerHTML = ConnDeviceId;
 	document.getElementById('Pass').style.backgroundColor = 'green';
+	sendData();
 	ble.startNotification(ConnDeviceId, blue.serviceUUID, blue.rxCharacteristic, onData, onError);
 }
 
@@ -96,7 +97,7 @@ function data(txt){
 }	
 
 function sendData() { // send data to Arduino
-	 var data = stringToBytes(messageInput.value);
+	 var data = stringToBytes("1"); // Sender altid tegnet 1
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 	
