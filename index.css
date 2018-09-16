@@ -1,9 +1,10 @@
 body{
 	background-color: #cf1b27;
 	color: white;
-}	
+}
+
 img{
-	width: 20%;
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -13,17 +14,12 @@ img{
   * The css make content  smaller than the body itself
   * and centret.
   */
+
 #content {
 	width: 75%;
 	margin: auto;
 }
 
-#bleDeviceList{
-	
-}	
-#messageInput{
-	
-}
 #list{
 	background-color: red;
 }
@@ -38,7 +34,7 @@ width: 90px;
 height: 90px;
 position: absolute;
 background-color:#cf1b27;
-left: 44%;
+left: 24%;
 border: 2px solid black;
 }
 
@@ -48,6 +44,6 @@ width: 90px;
 height: 90px;
 position: absolute;
 background-color: green;
-left: 44%;
+left: 24%;
 border: 2px solid black;
 }
