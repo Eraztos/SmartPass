@@ -57,7 +57,6 @@ function refreshDeviceList(){
 	}
 }
 
-
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 		var listItem = document.createElement('li'),
@@ -65,7 +64,6 @@ function onDiscoverDevice(device){
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 }
-
 
 function conn(){
 	var  deviceTouch= event.srcElement.innerHTML;
@@ -102,10 +100,6 @@ function data(txt){
 function sendData() { // send data to Arduino
 	 var data = stringToBytes("1"); // Sender altid tegnet 1
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
-}
-	
-function onSend(){
-	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "<br/>";
 }
 
 function disconnect() {

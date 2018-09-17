@@ -4,7 +4,7 @@ body{
 }
 
 img{
-	width: 40%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -22,11 +22,6 @@ img{
 
 #list{
 	background-color: red;
-}
-
-/* width will be 100% of content */
-#refreshButton{
-	width: 100%;
 }
 
 #Pass{
